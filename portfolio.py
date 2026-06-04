@@ -150,7 +150,7 @@ st.markdown("""
 <div class="hero">
     <h1>🤖 AI Solutions by Assyrian</h1>
     <p>I build custom AI tools for Melbourne businesses that save your team 10+ hours every week.<br>
-    Chatbots · Document Automation · Email Tools</p>
+    Chatbots · Document Automation · Email Tools · Social Media</p>
     <br>
     <span style="background:#0066FF22; border:1px solid #0066FF; padding:6px 16px; border-radius:99px; font-size:13px; color:#60A5FA;">
         <span class="glow"></span> Available for new projects
@@ -232,8 +232,35 @@ with col5:
 with col6:
     st.markdown("""
     <div class="card">
+        <h3>📱 Social Media Caption Writer</h3>
+        <p>Generate engaging captions for Instagram, Facebook, LinkedIn and TikTok instantly. Supports Melbourne focused hashtags.</p>
+        <span class="tag">Instagram</span>
+        <span class="tag">Facebook</span>
+        <span class="tag">LinkedIn</span>
+        <br><br>
+        <span class="price">From $399 AUD</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+col7, col8 = st.columns(2)
+with col7:
+    st.markdown("""
+    <div class="card">
+        <h3>🏷️ Business Name Generator</h3>
+        <p>Generate creative business names and catchy slogans tailored to your industry, style and Melbourne market.</p>
+        <span class="tag">Startups</span>
+        <span class="tag">Rebranding</span>
+        <span class="tag">New ventures</span>
+        <br><br>
+        <span class="price">From $299 AUD</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col8:
+    st.markdown("""
+    <div class="card">
         <h3>⚙️ Custom AI Tool</h3>
-        <p>Have a specific problem? I'll build a custom AI solution tailored to your workflow, team and industry.</p>
+        <p>Have a specific problem? I will build a custom AI solution tailored to your workflow, team and industry.</p>
         <span class="tag">Any industry</span>
         <span class="tag">Any size</span>
         <br><br>
@@ -244,8 +271,8 @@ with col6:
 # Why work with me
 st.markdown('<div class="section-title">✅ Why Work With Me</div>', unsafe_allow_html=True)
 
-col7, col8, col9 = st.columns(3)
-with col7:
+col9, col10, col11 = st.columns(3)
+with col9:
     st.markdown("""
     <div class="card" style="text-align:center">
         <h3>⚡ Fast</h3>
@@ -253,7 +280,7 @@ with col7:
     </div>
     """, unsafe_allow_html=True)
 
-with col8:
+with col10:
     st.markdown("""
     <div class="card" style="text-align:center">
         <h3>💰 Affordable</h3>
@@ -261,7 +288,7 @@ with col8:
     </div>
     """, unsafe_allow_html=True)
 
-with col9:
+with col11:
     st.markdown("""
     <div class="card" style="text-align:center">
         <h3>🔧 Supported</h3>
@@ -282,6 +309,9 @@ st.markdown("""
     <span class="demo-link">🦷 Dental Clinic Chatbot &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run dental_app.py</code></span>
     <span class="demo-link">🏨 Hotel Reservation Bot &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run hotel_app.py</code></span>
     <span class="demo-link">🍽️ Restaurant Assistant &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run restaurant_app.py</code></span>
+    <span class="demo-link">🏠 Real Estate Chatbot &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run chatbot_app.py</code></span>
+    <span class="demo-link">📱 Social Media Writer &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run social_media_app.py</code></span>
+    <span class="demo-link">🏷️ Business Name Generator &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run business_name_app.py</code></span>
 </div>
 """, unsafe_allow_html=True)
 
