@@ -1,0 +1,310 @@
+import streamlit as st
+
+st.set_page_config(page_title="AI Solutions by Assyrian", page_icon="🤖", layout="centered")
+
+st.markdown("""
+    <style>
+    /* Global dark background */
+    .stApp {
+        background-color: #0A0A0F;
+        color: #E2E8F0;
+    }
+    .main { max-width: 800px; margin: auto; }
+
+    /* Hero */
+    .hero {
+        background: linear-gradient(135deg, #0066FF, #0A0A0F 80%);
+        border: 1px solid #0066FF;
+        padding: 2.5rem;
+        border-radius: 16px;
+        color: white;
+        text-align: center;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 40px rgba(0, 102, 255, 0.3);
+    }
+    .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; color: white; }
+    .hero p { font-size: 1.1rem; opacity: 0.85; color: #CBD5E1; }
+
+    /* Cards */
+    .card {
+        background: #111118;
+        border: 1px solid #1E1E2E;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 0 20px rgba(0, 102, 255, 0.05);
+        transition: border-color 0.2s;
+    }
+    .card:hover { border-color: #0066FF; }
+    .card h3 { margin-bottom: 0.3rem; color: #F1F5F9; }
+    .card p { color: #94A3B8; font-size: 14px; margin-bottom: 1rem; }
+
+    /* Tags */
+    .tag {
+        display: inline-block;
+        background: #0A1628;
+        color: #3B82F6;
+        border: 1px solid #1E3A5F;
+        padding: 3px 10px;
+        border-radius: 99px;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+
+    /* Price */
+    .price {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #0066FF;
+    }
+
+    /* Section titles */
+    .section-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #F1F5F9;
+        margin: 2rem 0 1rem;
+        border-left: 3px solid #0066FF;
+        padding-left: 12px;
+    }
+
+    /* Contact box */
+    .contact-box {
+        background: #111118;
+        border: 1px solid #0066FF;
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 0 30px rgba(0, 102, 255, 0.15);
+    }
+    .contact-box h3 { color: #F1F5F9; }
+
+    /* Buttons */
+    .stButton>button {
+        background: linear-gradient(135deg, #0066FF, #0044CC);
+        color: white;
+        border: none;
+        padding: 0.6rem 2rem;
+        border-radius: 8px;
+        font-size: 15px;
+        width: 100%;
+        box-shadow: 0 0 15px rgba(0, 102, 255, 0.4);
+        transition: all 0.2s;
+    }
+    .stButton>button:hover {
+        background: linear-gradient(135deg, #0080FF, #0066FF);
+        box-shadow: 0 0 25px rgba(0, 102, 255, 0.6);
+    }
+
+    /* Input fields */
+    .stTextInput>div>div>input,
+    .stTextArea>div>div>textarea {
+        background-color: #111118 !important;
+        color: #E2E8F0 !important;
+        border: 1px solid #1E1E2E !important;
+        border-radius: 8px !important;
+    }
+    .stTextInput>div>div>input:focus,
+    .stTextArea>div>div>textarea:focus {
+        border-color: #0066FF !important;
+        box-shadow: 0 0 10px rgba(0, 102, 255, 0.2) !important;
+    }
+
+    /* Divider */
+    hr { border-color: #1E1E2E !important; }
+
+    /* Caption */
+    .stCaption { color: #475569 !important; }
+
+    /* Glow dot */
+    .glow {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #0066FF;
+        border-radius: 50%;
+        box-shadow: 0 0 8px #0066FF;
+        margin-right: 6px;
+        vertical-align: middle;
+    }
+
+    /* Demo links */
+    .demo-link {
+        display: block;
+        background: #0A1628;
+        border: 1px solid #1E3A5F;
+        border-radius: 8px;
+        padding: 10px 16px;
+        margin-bottom: 8px;
+        color: #60A5FA;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .demo-link:hover { border-color: #0066FF; color: #93C5FD; }
+    </style>
+""", unsafe_allow_html=True)
+
+# Hero
+st.markdown("""
+<div class="hero">
+    <h1>🤖 AI Solutions by Assyrian</h1>
+    <p>I build custom AI tools for Melbourne businesses that save your team 10+ hours every week.<br>
+    Chatbots · Document Automation · Email Tools</p>
+    <br>
+    <span style="background:#0066FF22; border:1px solid #0066FF; padding:6px 16px; border-radius:99px; font-size:13px; color:#60A5FA;">
+        <span class="glow"></span> Available for new projects
+    </span>
+</div>
+""", unsafe_allow_html=True)
+
+# What I build
+st.markdown('<div class="section-title">🛠️ What I Build</div>', unsafe_allow_html=True)
+
+col1, col2 = st.columns(2)
+with col1:
+    st.markdown("""
+    <div class="card">
+        <h3>🤖 Business Chatbot</h3>
+        <p>A 24/7 AI assistant trained on your business — answers questions, books appointments and captures leads automatically.</p>
+        <span class="tag">Real estate</span>
+        <span class="tag">Clinics</span>
+        <span class="tag">Restaurants</span>
+        <br><br>
+        <span class="price">From $799</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <div class="card">
+        <h3>📄 Document Summarizer</h3>
+        <p>Upload any PDF or document and get a clear summary instantly. Saves hours of reading for law firms, agencies and consultants.</p>
+        <span class="tag">Law firms</span>
+        <span class="tag">Finance</span>
+        <span class="tag">HR</span>
+        <br><br>
+        <span class="price">From $599</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+col3, col4 = st.columns(2)
+with col3:
+    st.markdown("""
+    <div class="card">
+        <h3>✉️ AI Email Writer</h3>
+        <p>Turn bullet points into professional emails in seconds. Supports multiple tones and languages including Arabic.</p>
+        <span class="tag">Sales teams</span>
+        <span class="tag">Agencies</span>
+        <span class="tag">Freelancers</span>
+        <br><br>
+        <span class="price">From $499</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col4:
+    st.markdown("""
+    <div class="card">
+        <h3>🏨 Hotel Reservation Bot</h3>
+        <p>A smart concierge that handles room inquiries, bookings and guest questions around the clock.</p>
+        <span class="tag">Hotels</span>
+        <span class="tag">Serviced apartments</span>
+        <span class="tag">B&Bs</span>
+        <br><br>
+        <span class="price">From $999</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+col5, col6 = st.columns(2)
+with col5:
+    st.markdown("""
+    <div class="card">
+        <h3>🍽️ Restaurant Assistant</h3>
+        <p>Handles table reservations, menu questions, dietary needs and special occasion requests — 24/7.</p>
+        <span class="tag">Restaurants</span>
+        <span class="tag">Cafes</span>
+        <span class="tag">Catering</span>
+        <br><br>
+        <span class="price">From $849</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col6:
+    st.markdown("""
+    <div class="card">
+        <h3>⚙️ Custom AI Tool</h3>
+        <p>Have a specific problem? I'll build a custom AI solution tailored to your workflow, team and industry.</p>
+        <span class="tag">Any industry</span>
+        <span class="tag">Any size</span>
+        <br><br>
+        <span class="price">From $1199</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Why work with me
+st.markdown('<div class="section-title">✅ Why Work With Me</div>', unsafe_allow_html=True)
+
+col7, col8, col9 = st.columns(3)
+with col7:
+    st.markdown("""
+    <div class="card" style="text-align:center">
+        <h3>⚡ Fast</h3>
+        <p>Most tools delivered within 3–5 business days</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col8:
+    st.markdown("""
+    <div class="card" style="text-align:center">
+        <h3>💰 Affordable</h3>
+        <p>Flat fees — no hidden costs or hourly billing surprises</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col9:
+    st.markdown("""
+    <div class="card" style="text-align:center">
+        <h3>🔧 Supported</h3>
+        <p>30 days free support after every delivery</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Live demos
+st.markdown('<div class="section-title">🚀 Live Demos</div>', unsafe_allow_html=True)
+
+st.markdown("""
+<div class="card">
+    <h3>Try my tools live</h3>
+    <p>These are real working demos — the same quality you would get for your Melbourne business.</p>
+    <p style="color:#64748B; font-size:13px; margin-bottom:12px;">Run any demo by typing in your terminal:</p>
+    <span class="demo-link">✉️ Email Writer &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run email_app.py</code></span>
+    <span class="demo-link">📄 Document Summarizer &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run summarizer_app.py</code></span>
+    <span class="demo-link">🦷 Dental Clinic Chatbot &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run dental_app.py</code></span>
+    <span class="demo-link">🏨 Hotel Reservation Bot &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run hotel_app.py</code></span>
+    <span class="demo-link">🍽️ Restaurant Assistant &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run restaurant_app.py</code></span>
+</div>
+""", unsafe_allow_html=True)
+
+# Contact
+st.markdown('<div class="section-title">📬 Get In Touch</div>', unsafe_allow_html=True)
+
+st.markdown("""
+<div class="contact-box">
+    <h3>Ready to save 10+ hours a week?</h3>
+    <p style="color:#94A3B8; margin-bottom: 1rem;">Book a free 15 minute call with Assyrian and I will show you exactly what I can build for your Melbourne business.</p>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("<br>", unsafe_allow_html=True)
+
+contact_name = st.text_input("Your name")
+contact_email = st.text_input("Your email")
+contact_message = st.text_area("Tell me about your business", placeholder="e.g. I run a dental clinic in Melbourne and need a chatbot...")
+
+if st.button("📩 Send Message"):
+    if contact_name and contact_email and contact_message:
+        st.success(f"Thanks {contact_name}! Assyrian will get back to you within 24 hours. 🎉")
+    else:
+        st.warning("Please fill in all fields.")
+
+st.divider()
+st.caption("© 2026 Assyrian · AI Solutions for Melbourne Businesses · Built with Python & Streamlit")
