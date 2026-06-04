@@ -1,4 +1,5 @@
 import streamlit as st
+import requests
 
 st.set_page_config(page_title="AI Solutions by Assyrian", page_icon="🤖", layout="centered")
 
@@ -170,7 +171,7 @@ with col1:
         <span class="tag">Clinics</span>
         <span class="tag">Restaurants</span>
         <br><br>
-        <span class="price">From $799</span>
+        <span class="price">From $799 AUD</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -183,7 +184,7 @@ with col2:
         <span class="tag">Finance</span>
         <span class="tag">HR</span>
         <br><br>
-        <span class="price">From $599</span>
+        <span class="price">From $599 AUD</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -197,7 +198,7 @@ with col3:
         <span class="tag">Agencies</span>
         <span class="tag">Freelancers</span>
         <br><br>
-        <span class="price">From $499</span>
+        <span class="price">From $499 AUD</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -210,7 +211,7 @@ with col4:
         <span class="tag">Serviced apartments</span>
         <span class="tag">B&Bs</span>
         <br><br>
-        <span class="price">From $999</span>
+        <span class="price">From $999 AUD</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -224,7 +225,7 @@ with col5:
         <span class="tag">Cafes</span>
         <span class="tag">Catering</span>
         <br><br>
-        <span class="price">From $849</span>
+        <span class="price">From $849 AUD</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -236,7 +237,7 @@ with col6:
         <span class="tag">Any industry</span>
         <span class="tag">Any size</span>
         <br><br>
-        <span class="price">From $1199</span>
+        <span class="price">From $1,199 AUD</span>
     </div>
     """, unsafe_allow_html=True)
 
@@ -302,9 +303,26 @@ contact_message = st.text_area("Tell me about your business", placeholder="e.g. 
 
 if st.button("📩 Send Message"):
     if contact_name and contact_email and contact_message:
-        st.success(f"Thanks {contact_name}! Assyrian will get back to you within 24 hours. 🎉")
+        with st.spinner("Sending your message..."):
+            try:
+                response = requests.post(
+                    "https://formspree.io/f/meewqpqn",
+                    data={
+                        "name": contact_name,
+                        "email": contact_email,
+                        "message": contact_message
+                    },
+                    headers={"Accept": "application/json"}
+                )
+                if response.status_code == 200:
+                    st.success(f"Thanks {contact_name}! Your message was sent — Assyrian will get back to you within 24 hours. 🎉")
+                    st.balloons()
+                else:
+                    st.error("Something went wrong. Please email me directly.")
+            except Exception as e:
+                st.error(f"Connection error: {e}")
     else:
-        st.warning("Please fill in all fields.")
+        st.warning("Please fill in all fields before sending.")
 
 st.divider()
 st.caption("© 2026 Assyrian · AI Solutions for Melbourne Businesses · Built with Python & Streamlit")
