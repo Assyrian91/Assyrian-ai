@@ -150,7 +150,7 @@ st.markdown("""
 <div class="hero">
     <h1>🤖 AI Solutions by Assyrian</h1>
     <p>I build custom AI tools for Melbourne businesses that save your team 10+ hours every week.<br>
-    Chatbots · Document Automation · Email Tools · Social Media</p>
+    Chatbots · Content Writing · Document Automation · Social Media</p>
     <br>
     <span style="background:#0066FF22; border:1px solid #0066FF; padding:6px 16px; border-radius:99px; font-size:13px; color:#60A5FA;">
         <span class="glow"></span> Available for new projects
@@ -158,9 +158,34 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# Stats bar
+col_s1, col_s2, col_s3 = st.columns(3)
+with col_s1:
+    st.markdown("""
+    <div class="card" style="text-align:center; padding:1rem;">
+        <div style="font-size:1.8rem; font-weight:700; color:#0066FF;">12+</div>
+        <div style="font-size:13px; color:#64748B;">AI Tools Built</div>
+    </div>
+    """, unsafe_allow_html=True)
+with col_s2:
+    st.markdown("""
+    <div class="card" style="text-align:center; padding:1rem;">
+        <div style="font-size:1.8rem; font-weight:700; color:#0066FF;">3-5</div>
+        <div style="font-size:13px; color:#64748B;">Days Delivery</div>
+    </div>
+    """, unsafe_allow_html=True)
+with col_s3:
+    st.markdown("""
+    <div class="card" style="text-align:center; padding:1rem;">
+        <div style="font-size:1.8rem; font-weight:700; color:#0066FF;">30</div>
+        <div style="font-size:13px; color:#64748B;">Days Free Support</div>
+    </div>
+    """, unsafe_allow_html=True)
+
 # What I build
 st.markdown('<div class="section-title">🛠️ What I Build</div>', unsafe_allow_html=True)
 
+# Row 1
 col1, col2 = st.columns(2)
 with col1:
     st.markdown("""
@@ -188,6 +213,7 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
+# Row 2
 col3, col4 = st.columns(2)
 with col3:
     st.markdown("""
@@ -215,6 +241,7 @@ with col4:
     </div>
     """, unsafe_allow_html=True)
 
+# Row 3
 col5, col6 = st.columns(2)
 with col5:
     st.markdown("""
@@ -242,6 +269,7 @@ with col6:
     </div>
     """, unsafe_allow_html=True)
 
+# Row 4
 col7, col8 = st.columns(2)
 with col7:
     st.markdown("""
@@ -259,6 +287,62 @@ with col7:
 with col8:
     st.markdown("""
     <div class="card">
+        <h3>❓ FAQ Generator</h3>
+        <p>Generate professional FAQs for your website instantly. Saves hours of writing and covers every question customers ask.</p>
+        <span class="tag">Websites</span>
+        <span class="tag">E-commerce</span>
+        <span class="tag">Any business</span>
+        <br><br>
+        <span class="price">From $299 AUD</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Row 5
+col9, col10 = st.columns(2)
+with col9:
+    st.markdown("""
+    <div class="card">
+        <h3>✍️ Blog Post Writer</h3>
+        <p>Generate full SEO-optimised blog posts for any business in seconds. Drives organic traffic and builds authority online.</p>
+        <span class="tag">SEO</span>
+        <span class="tag">Content marketing</span>
+        <span class="tag">Any industry</span>
+        <br><br>
+        <span class="price">From $349 AUD</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col10:
+    st.markdown("""
+    <div class="card">
+        <h3>🛍️ Product Description Writer</h3>
+        <p>Generate compelling product descriptions that convert browsers into buyers. Optimised for Shopify, Amazon, eBay and more.</p>
+        <span class="tag">Shopify</span>
+        <span class="tag">Amazon</span>
+        <span class="tag">E-commerce</span>
+        <br><br>
+        <span class="price">From $349 AUD</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Row 6
+col11, col12 = st.columns(2)
+with col11:
+    st.markdown("""
+    <div class="card">
+        <h3>🏠 Real Estate Chatbot</h3>
+        <p>AI property assistant that covers 30+ Melbourne suburbs, guides first home buyers and books inspections automatically.</p>
+        <span class="tag">Real estate</span>
+        <span class="tag">Property management</span>
+        <span class="tag">Melbourne</span>
+        <br><br>
+        <span class="price">From $799 AUD</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col12:
+    st.markdown("""
+    <div class="card">
         <h3>⚙️ Custom AI Tool</h3>
         <p>Have a specific problem? I will build a custom AI solution tailored to your workflow, team and industry.</p>
         <span class="tag">Any industry</span>
@@ -271,8 +355,8 @@ with col8:
 # Why work with me
 st.markdown('<div class="section-title">✅ Why Work With Me</div>', unsafe_allow_html=True)
 
-col9, col10, col11 = st.columns(3)
-with col9:
+col13, col14, col15 = st.columns(3)
+with col13:
     st.markdown("""
     <div class="card" style="text-align:center">
         <h3>⚡ Fast</h3>
@@ -280,7 +364,7 @@ with col9:
     </div>
     """, unsafe_allow_html=True)
 
-with col10:
+with col14:
     st.markdown("""
     <div class="card" style="text-align:center">
         <h3>💰 Affordable</h3>
@@ -288,7 +372,7 @@ with col10:
     </div>
     """, unsafe_allow_html=True)
 
-with col11:
+with col15:
     st.markdown("""
     <div class="card" style="text-align:center">
         <h3>🔧 Supported</h3>
@@ -312,6 +396,9 @@ st.markdown("""
     <span class="demo-link">🏠 Real Estate Chatbot &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run chatbot_app.py</code></span>
     <span class="demo-link">📱 Social Media Writer &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run social_media_app.py</code></span>
     <span class="demo-link">🏷️ Business Name Generator &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run business_name_app.py</code></span>
+    <span class="demo-link">❓ FAQ Generator &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run faq_generator_app.py</code></span>
+    <span class="demo-link">✍️ Blog Post Writer &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run blog_writer_app.py</code></span>
+    <span class="demo-link">🛍️ Product Description Writer &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run product_description_app.py</code></span>
 </div>
 """, unsafe_allow_html=True)
 
