@@ -1,0 +1,179 @@
+╔════════════════════════════════════════════════════╗
+         AI SOLUTIONS BY ASSYRIAN
+         Client Onboarding Document
+╚════════════════════════════════════════════════════╝
+
+Welcome! I'm excited to build your AI tool.
+This document covers everything we need to get started.
+
+════════════════════════════════════════════════════
+1. YOUR DETAILS
+════════════════════════════════════════════════════
+
+Business name: ________________________________
+Your name: ____________________________________
+Email: ________________________________________
+Phone: ________________________________________
+Website: ______________________________________
+Industry: _____________________________________
+
+════════════════════════════════════════════════════
+2. YOUR BUSINESS INFORMATION
+════════════════════════════════════════════════════
+
+Address: ______________________________________
+Opening hours:
+  Monday–Friday: ______________________________
+  Saturday: ___________________________________
+  Sunday: _____________________________________
+
+════════════════════════════════════════════════════
+3. SERVICES & PRICING
+════════════════════════════════════════════════════
+
+Please list all your services and prices below.
+(The more detail, the better your chatbot will be)
+
+Service 1: _________________ Price: ____________
+Service 2: _________________ Price: ____________
+Service 3: _________________ Price: ____________
+Service 4: _________________ Price: ____________
+Service 5: _________________ Price: ____________
+
+(Add as many as needed)
+
+════════════════════════════════════════════════════
+4. FREQUENTLY ASKED QUESTIONS
+════════════════════════════════════════════════════
+
+What are the 5 questions customers ask you most often?
+
+Q1: ___________________________________________
+A1: ___________________________________________
+
+Q2: ___________________________________________
+A2: ___________________________________________
+
+Q3: ___________________________________________
+A3: ___________________________________________
+
+Q4: ___________________________________________
+A4: ___________________________________________
+
+Q5: ___________________________________________
+A5: ___________________________________________
+
+════════════════════════════════════════════════════
+5. CHATBOT PERSONALITY
+════════════════════════════════════════════════════
+
+How would you like your chatbot to sound?
+(Circle or mark one)
+
+Tone:         Professional  /  Friendly  /  Both
+Language:     English only  /  English + Arabic
+Response length: Short & quick  /  Detailed
+
+Anything specific you want the chatbot to always say?
+__________________________________________________
+__________________________________________________
+
+Anything specific you do NOT want it to say?
+__________________________________________________
+__________________________________________________
+
+════════════════════════════════════════════════════
+6. BOOKING & LEADS
+════════════════════════════════════════════════════
+
+Should the chatbot collect booking requests?
+  YES / NO
+
+If yes, what information should it collect?
+  [ ] Name
+  [ ] Phone number
+  [ ] Email
+  [ ] Preferred date and time
+  [ ] Service required
+  [ ] Other: ____________________________________
+
+Where should booking requests be sent?
+Email: ________________________________________
+
+════════════════════════════════════════════════════
+7. INSURANCE / PAYMENT (for clinics)
+════════════════════════════════════════════════════
+
+Do you accept health insurance / funds?
+  YES / NO
+
+If yes, which ones?
+__________________________________________________
+
+Payment methods you accept:
+  [ ] Cash
+  [ ] Credit/Debit card
+  [ ] Bank transfer
+  [ ] Other: ____________________________________
+
+════════════════════════════════════════════════════
+8. DELIVERY DETAILS
+════════════════════════════════════════════════════
+
+How would you like the chatbot delivered?
+  [ ] Streamlit link (I host it — easiest)
+  [ ] Embedded on my website (I need help with this)
+  [ ] Both
+
+Website platform (if embedding):
+  [ ] WordPress
+  [ ] Wix
+  [ ] Squarespace
+  [ ] Custom website
+  [ ] Other: ____________________________________
+
+════════════════════════════════════════════════════
+9. TIMELINE & PAYMENT
+════════════════════════════════════════════════════
+
+Delivery time: 3–5 business days after form received
+
+Payment:
+  • 50% deposit to begin: ____________ AUD
+  • 50% on delivery: ________________ AUD
+  • Total: __________________________ AUD
+
+Payment methods accepted:
+  • Bank transfer (BSB and account provided on invoice)
+  • PayPal
+  • Cash (Melbourne clients only)
+
+════════════════════════════════════════════════════
+10. SUPPORT
+════════════════════════════════════════════════════
+
+Included free:
+  ✅ 30 days of free changes and support
+  ✅ One round of revisions before delivery
+  ✅ Video walkthrough of your finished tool
+
+Optional monthly retainer:
+  $150 AUD/month — unlimited small updates,
+  priority support, monthly check-in call
+
+════════════════════════════════════════════════════
+
+NEXT STEPS:
+1. Fill in this form and email it back to:
+   ashuraya-ai.streamlit.app
+
+2. I will send you an invoice for the 50% deposit
+
+3. Work begins within 24 hours of deposit received
+
+4. Your tool will be delivered in 3–5 business days
+
+Thank you for choosing AI Solutions by Assyrian!
+
+© 2026 Assyrian · AI Solutions for Melbourne Businesses
+════════════════════════════════════════════════════
