@@ -142,6 +142,38 @@ st.markdown("""
         text-decoration: none;
     }
     .demo-link:hover { border-color: #0066FF; color: #93C5FD; }
+
+    /* Social links */
+    .social-bar {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+    .social-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 18px;
+        border-radius: 99px;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+    .social-youtube {
+        background: #FF000022;
+        border: 1px solid #FF0000;
+        color: #FF6666;
+    }
+    .social-youtube:hover { background: #FF000044; }
+    .social-instagram {
+        background: #E1306C22;
+        border: 1px solid #E1306C;
+        color: #F472B6;
+    }
+    .social-instagram:hover { background: #E1306C44; }
     </style>
 """, unsafe_allow_html=True)
 
@@ -150,42 +182,26 @@ st.markdown("""
 <div class="hero">
     <h1>🤖 AI Solutions by Assyrian</h1>
     <p>I build custom AI tools for Melbourne businesses that save your team 10+ hours every week.<br>
-    Chatbots · Content Writing · Document Automation · Social Media</p>
+    Chatbots · Document Automation · Content Writing · Social Media</p>
     <br>
     <span style="background:#0066FF22; border:1px solid #0066FF; padding:6px 16px; border-radius:99px; font-size:13px; color:#60A5FA;">
         <span class="glow"></span> Available for new projects
     </span>
+    <br><br>
+    <div class="social-bar">
+        <a href="https://www.youtube.com/@Assyrian-AI" target="_blank" class="social-btn social-youtube">
+            ▶️ YouTube — Watch Demos
+        </a>
+        <a href="https://www.instagram.com/assyrian.ai.solution" target="_blank" class="social-btn social-instagram">
+            📸 Instagram — @assyrian.ai.solution
+        </a>
+    </div>
 </div>
 """, unsafe_allow_html=True)
-
-# Stats bar
-col_s1, col_s2, col_s3 = st.columns(3)
-with col_s1:
-    st.markdown("""
-    <div class="card" style="text-align:center; padding:1rem;">
-        <div style="font-size:1.8rem; font-weight:700; color:#0066FF;">12+</div>
-        <div style="font-size:13px; color:#64748B;">AI Tools Built</div>
-    </div>
-    """, unsafe_allow_html=True)
-with col_s2:
-    st.markdown("""
-    <div class="card" style="text-align:center; padding:1rem;">
-        <div style="font-size:1.8rem; font-weight:700; color:#0066FF;">3-5</div>
-        <div style="font-size:13px; color:#64748B;">Days Delivery</div>
-    </div>
-    """, unsafe_allow_html=True)
-with col_s3:
-    st.markdown("""
-    <div class="card" style="text-align:center; padding:1rem;">
-        <div style="font-size:1.8rem; font-weight:700; color:#0066FF;">30</div>
-        <div style="font-size:13px; color:#64748B;">Days Free Support</div>
-    </div>
-    """, unsafe_allow_html=True)
 
 # What I build
 st.markdown('<div class="section-title">🛠️ What I Build</div>', unsafe_allow_html=True)
 
-# Row 1
 col1, col2 = st.columns(2)
 with col1:
     st.markdown("""
@@ -213,7 +229,6 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
-# Row 2
 col3, col4 = st.columns(2)
 with col3:
     st.markdown("""
@@ -241,7 +256,6 @@ with col4:
     </div>
     """, unsafe_allow_html=True)
 
-# Row 3
 col5, col6 = st.columns(2)
 with col5:
     st.markdown("""
@@ -260,7 +274,7 @@ with col6:
     st.markdown("""
     <div class="card">
         <h3>📱 Social Media Caption Writer</h3>
-        <p>Generate engaging captions for Instagram, Facebook, LinkedIn and TikTok instantly. Supports Melbourne focused hashtags.</p>
+        <p>Generate engaging captions for Instagram, Facebook, LinkedIn and TikTok instantly. Melbourne focused hashtags included.</p>
         <span class="tag">Instagram</span>
         <span class="tag">Facebook</span>
         <span class="tag">LinkedIn</span>
@@ -269,7 +283,6 @@ with col6:
     </div>
     """, unsafe_allow_html=True)
 
-# Row 4
 col7, col8 = st.columns(2)
 with col7:
     st.markdown("""
@@ -288,25 +301,24 @@ with col8:
     st.markdown("""
     <div class="card">
         <h3>❓ FAQ Generator</h3>
-        <p>Generate professional FAQs for your website instantly. Saves hours of writing and covers every question customers ask.</p>
+        <p>Generate professional FAQ sections for your website instantly. Covers pricing, services, hours and customer concerns.</p>
         <span class="tag">Websites</span>
         <span class="tag">E-commerce</span>
-        <span class="tag">Any business</span>
+        <span class="tag">Clinics</span>
         <br><br>
         <span class="price">From $299 AUD</span>
     </div>
     """, unsafe_allow_html=True)
 
-# Row 5
 col9, col10 = st.columns(2)
 with col9:
     st.markdown("""
     <div class="card">
         <h3>✍️ Blog Post Writer</h3>
-        <p>Generate full SEO-optimised blog posts for any business in seconds. Drives organic traffic and builds authority online.</p>
+        <p>Generate full SEO-optimised blog posts for any Melbourne business. Drives organic traffic and builds authority.</p>
         <span class="tag">SEO</span>
         <span class="tag">Content marketing</span>
-        <span class="tag">Any industry</span>
+        <span class="tag">All industries</span>
         <br><br>
         <span class="price">From $349 AUD</span>
     </div>
@@ -316,25 +328,24 @@ with col10:
     st.markdown("""
     <div class="card">
         <h3>🛍️ Product Description Writer</h3>
-        <p>Generate compelling product descriptions that convert browsers into buyers. Optimised for Shopify, Amazon, eBay and more.</p>
+        <p>Generate compelling product descriptions that convert browsers into buyers. Optimised for Shopify, Amazon and eBay.</p>
         <span class="tag">Shopify</span>
         <span class="tag">Amazon</span>
-        <span class="tag">E-commerce</span>
+        <span class="tag">eBay</span>
         <br><br>
         <span class="price">From $349 AUD</span>
     </div>
     """, unsafe_allow_html=True)
 
-# Row 6
 col11, col12 = st.columns(2)
 with col11:
     st.markdown("""
     <div class="card">
         <h3>🏠 Real Estate Chatbot</h3>
-        <p>AI property assistant that covers 30+ Melbourne suburbs, guides first home buyers and books inspections automatically.</p>
-        <span class="tag">Real estate</span>
-        <span class="tag">Property management</span>
-        <span class="tag">Melbourne</span>
+        <p>AI property assistant covering 30+ Melbourne suburbs. Books inspections, guides first home buyers and gives investment advice.</p>
+        <span class="tag">Melbourne suburbs</span>
+        <span class="tag">First home buyers</span>
+        <span class="tag">Investors</span>
         <br><br>
         <span class="price">From $799 AUD</span>
     </div>
@@ -387,7 +398,7 @@ st.markdown("""
 <div class="card">
     <h3>Try my tools live</h3>
     <p>These are real working demos — the same quality you would get for your Melbourne business.</p>
-    <p style="color:#64748B; font-size:13px; margin-bottom:12px;">Run any demo by typing in your terminal:</p>
+    <p style="color:#64748B; font-size:13px; margin-bottom:12px;">▶️ Watch demos on <a href="https://www.youtube.com/@Assyrian-AI" target="_blank" style="color:#60A5FA;">YouTube</a> · Follow updates on <a href="https://www.instagram.com/assyrian.ai.solution" target="_blank" style="color:#F472B6;">Instagram</a></p>
     <span class="demo-link">✉️ Email Writer &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run email_app.py</code></span>
     <span class="demo-link">📄 Document Summarizer &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run summarizer_app.py</code></span>
     <span class="demo-link">🦷 Dental Clinic Chatbot &nbsp;→&nbsp; <code style="color:#94A3B8;">streamlit run dental_app.py</code></span>
@@ -409,6 +420,14 @@ st.markdown("""
 <div class="contact-box">
     <h3>Ready to save 10+ hours a week?</h3>
     <p style="color:#94A3B8; margin-bottom: 1rem;">Book a free 15 minute call with Assyrian and I will show you exactly what I can build for your Melbourne business.</p>
+    <div class="social-bar">
+        <a href="https://www.youtube.com/@Assyrian-AI" target="_blank" class="social-btn social-youtube">
+            ▶️ Watch Demos on YouTube
+        </a>
+        <a href="https://www.instagram.com/assyrian.ai.solution" target="_blank" class="social-btn social-instagram">
+            📸 Follow on Instagram
+        </a>
+    </div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -442,4 +461,19 @@ if st.button("📩 Send Message"):
         st.warning("Please fill in all fields before sending.")
 
 st.divider()
+
+# Footer with social links
+st.markdown("""
+<div style="text-align:center; padding: 1rem 0;">
+    <div class="social-bar" style="margin-bottom:8px;">
+        <a href="https://www.youtube.com/@Assyrian-AI" target="_blank" class="social-btn social-youtube">
+            ▶️ YouTube
+        </a>
+        <a href="https://www.instagram.com/assyrian.ai.solution" target="_blank" class="social-btn social-instagram">
+            📸 Instagram
+        </a>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
 st.caption("© 2026 Assyrian · AI Solutions for Melbourne Businesses · Built with Python & Streamlit")
