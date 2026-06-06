@@ -174,6 +174,12 @@ st.markdown("""
         color: #F472B6;
     }
     .social-instagram:hover { background: #E1306C44; }
+    .social-pricing {
+        background: #0066FF22;
+        border: 1px solid #0066FF;
+        color: #60A5FA;
+    }
+    .social-pricing:hover { background: #0066FF44; }
     </style>
 """, unsafe_allow_html=True)
 
@@ -194,6 +200,9 @@ st.markdown("""
         </a>
         <a href="https://www.instagram.com/assyrian.ai.solution" target="_blank" class="social-btn social-instagram">
             📸 Instagram — @assyrian.ai.solution
+        </a>
+        <a href="https://ashuraya-ai.streamlit.app/pricing" target="_blank" class="social-btn social-pricing">
+            💰 View Pricing
         </a>
     </div>
 </div>
@@ -413,6 +422,19 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# Pricing CTA
+st.markdown('<div class="section-title">💰 Pricing</div>', unsafe_allow_html=True)
+
+st.markdown("""
+<div class="card" style="text-align:center; padding:2rem;">
+    <h3 style="color:#F1F5F9; margin-bottom:0.5rem;">Simple, Transparent Pricing</h3>
+    <p style="color:#94A3B8; margin-bottom:1.5rem;">No hidden fees. No hourly billing surprises. Flat rates starting from $299 AUD.</p>
+    <a href="https://ashuraya-ai.streamlit.app/pricing" target="_blank" class="social-btn social-pricing" style="display:inline-flex; margin:auto;">
+        💰 View Full Pricing Page
+    </a>
+</div>
+""", unsafe_allow_html=True)
+
 # Contact
 st.markdown('<div class="section-title">📬 Get In Touch</div>', unsafe_allow_html=True)
 
@@ -426,6 +448,9 @@ st.markdown("""
         </a>
         <a href="https://www.instagram.com/assyrian.ai.solution" target="_blank" class="social-btn social-instagram">
             📸 Follow on Instagram
+        </a>
+        <a href="https://ashuraya-ai.streamlit.app/pricing" target="_blank" class="social-btn social-pricing">
+            💰 View Pricing
         </a>
     </div>
 </div>
@@ -462,7 +487,7 @@ if st.button("📩 Send Message"):
 
 st.divider()
 
-# Footer with social links
+# Footer
 st.markdown("""
 <div style="text-align:center; padding: 1rem 0;">
     <div class="social-bar" style="margin-bottom:8px;">
@@ -471,6 +496,9 @@ st.markdown("""
         </a>
         <a href="https://www.instagram.com/assyrian.ai.solution" target="_blank" class="social-btn social-instagram">
             📸 Instagram
+        </a>
+        <a href="https://ashuraya-ai.streamlit.app/pricing" target="_blank" class="social-btn social-pricing">
+            💰 Pricing
         </a>
     </div>
 </div>
