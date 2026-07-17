@@ -1,5 +1,8 @@
 # 🧠 Assyrian AI — AI-Powered Business Tools Suite
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
 🔗 **Live Demo:** [ashuraya-ai.streamlit.app](https://ashuraya-ai.streamlit.app/)
 
 A collection of AI-powered micro-tools built with Streamlit, designed to help small businesses automate everyday content and customer-facing tasks — from writing blog posts to running a niche chatbot for hotels, dental clinics, and restaurants.
@@ -65,7 +68,6 @@ Assyrian-ai/
 ├── dental_app.py / dental_app1.py # Dental clinic niche assistant
 ├── restaurant_app.py             # Restaurant niche assistant
 ├── onboarding_template.txt       # Client onboarding template
-├── prospects.txt                 # Prospect/lead notes
 ├── requirements.txt              # Dependencies
 └── .devcontainer/                # Dev container config
 ```
@@ -81,4 +83,4 @@ Assyrian-ai/
 ## 📝 License
 MIT — free to use, modify, and distribute.
 
-Built by Khoshaba Odeesho
+Built by **Khoshaba Odeesho**
